@@ -33,10 +33,10 @@ int main(){
 
     dfs(arr,0,arr.size()-1);
 
-    for(int i=0;i<ans.size();i++){
-        cout<<i+1<<": ";
-        for(int j=0;j<ans[i].size();j++){
-            cout<<ans[i][j]<<" ";
+    for(vector<int>item : ans){
+
+        for(int i : item){
+            cout<<i<<" ";
         }
         cout<<endl;
     }
